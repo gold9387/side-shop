@@ -9,5 +9,4 @@ public class SideMillkitApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SideMillkitApplication.class, args);
 	}
-
 }
