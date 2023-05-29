@@ -11,4 +11,7 @@ public class UserService {
     private final UserRepository userRepository;
 
 
+    public static boolean isValidUser(String email, String userPwd) {
+        return false;
+    }
 }

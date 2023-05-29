@@ -1,6 +1,7 @@
 package com.side.sidemillkit.entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -26,4 +27,11 @@ public class UserEntity {
     @Column(nullable = false, length = 15)
     private String phone;
 
+    @Builder
+    public UserEntity(String email, String userName, String userPwd, String phone) {
+        this.email = email;
+        this.userName = userName;
+        this.userPwd = userPwd;
+        this.phone = phone;
+    }
 }
