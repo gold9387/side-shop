@@ -11,5 +11,5 @@ import lombok.Setter;
 @DiscriminatorValue("S")
 public class Salad extends Item {
 
-    private String ingredient;
+    private String main;
 }
