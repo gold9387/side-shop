@@ -45,11 +45,12 @@ public class OrderService {
 
         // 주문 저장
         orderRepository.save(order);
+
         return order.getId();
     }
 
     /**
-     * 취소
+     * 주문 취소
      */
     @Transactional
     public void cancelOrder(Long orderId) {
@@ -64,6 +65,9 @@ public class OrderService {
     /**
      * 검색
      */
+//    public List<Order> findOrders(OrderSearch orderSearch) {
+//        return orderRepository.findAll(orderSearch);
+//    }
 
 }
 
